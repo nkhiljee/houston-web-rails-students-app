@@ -1,0 +1,7 @@
+<h3><%=@student.name%></h3>
+<h3><%=@student.major%></h3>
+<h3><%=@student.age%></h3>
+<%= @student.instructor.name %>
+<br>
+
+<%= link_to "Edit Student", edit_student_path(@student) %><br>

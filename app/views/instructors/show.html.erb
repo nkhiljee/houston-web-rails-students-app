@@ -1,0 +1,9 @@
+<h1><%=@instructor.name%></h1>
+
+<% @instructor.students.each do |student|%>
+<h3><%=student.name%></h3>
+<%end%>
+
+<br>
+
+<%= link_to "Edit Instructor", edit_instructor_path(@instructor) %><br>

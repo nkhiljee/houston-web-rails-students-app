@@ -1,0 +1,17 @@
+<%= form_for @instructor do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<%= f.submit %>
+<% end %>
+
+
+
+<% if flash[:errors] %>
+    <ul>
+        <% flash[:errors].each do |f| %>
+            <li>
+                <%=f%> 
+            </li>
+        <%end%>
+    </ul>
+<%end%>
